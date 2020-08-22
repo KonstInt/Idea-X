@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+
+            <TextView
+                android:id="@+id/testNumHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Внести предложение"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="?attr/spec_color"
+                android:textSize="25sp"
+                android:layout_marginTop="2dp"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:id="@+id/testStatisticHeader"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:src="@drawable/close"
+                android:layout_marginEnd="20dp"
+                android:onClick="back_from_idea"/>
+        </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/idea_first_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundr"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+
+        android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="?attr/backgroundr"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="К чему относится"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:onClick="openVariants"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:maxLength="41"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/raw_down" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Опишите своё предложение"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="400dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10"
+                android:layout_marginBottom="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="400dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/idea_test_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/without"
+                        android:gravity="top"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                       />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/getAns"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+
+
+                    android:background="@drawable/btn_shape"
+                    android:onClick="next"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/next_idea_step"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundr"
+        android:visibility="gone"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+
+        android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="?attr/backgroundr"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Результаты улучшений"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:onClick="openVariantsAddit"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/items_addit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:maxLength="41"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <androidx.legacy.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/raw_down" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Место улучшений"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="100dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10"
+                android:layout_marginBottom="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/idea_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/without"
+                        android:gravity="top"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Ожидаемый результат"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="100dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10"
+                android:layout_marginBottom="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/predictions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/without"
+                        android:gravity="top"
+                        android:text=""
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Затраты"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10"
+                android:layout_marginBottom="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/without"
+                        android:gravity="top"
+                        android:text=""
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+
+                android:layout_marginBottom="@dimen/padding_10"
+                android:text="Эффективная сумма"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="40dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/send_trouble_back_ground"
+                app:cardCornerRadius="@dimen/padding_10"
+                android:layout_marginBottom="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/padding_10"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                    <EditText
+                        android:id="@+id/effect_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:background="@color/without"
+                        android:gravity="top"
+                        android:text=""
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/getAns2"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/btn_shape"
+                    android:onClick="setData"
+                    android:text="Отправить"
+                    android:textColor="@color/white"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

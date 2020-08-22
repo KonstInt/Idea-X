@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/start_test_btn_shape"
+    >
+
+    <TextView
+        android:id="@+id/group_create_x"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/start_test_btn_shape"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="?attr/spec_color"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/group_photo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/spec_color"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Осталось только добавить фото!"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/set_group_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ava"
+        app:civ_border_width="5dp"
+        app:civ_border_color="?attr/spec_color"/>
+
+    <TextView
+        android:id="@+id/group_create_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/spec_color"
+        android:layout_gravity="start"
+
+        android:layout_margin="10dp"
+        android:text="Название беседы:"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/set_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="33"
+        android:textColor="@drawable/btn_shape_text"
+        android:hint="Введите название..."
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColorHint="?attr/spec_color"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="?attr/spec_color"
+        android:inputType="text"
+        />
+
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <Button
+        android:id="@+id/group_create"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/start_test_btn_shape"
+        android:padding="10dp"
+        android:text="Далее"
+        android:textColor="?attr/spec_color" />
+
+    <Button
+        android:id="@+id/group_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/start_test_btn_shape"
+        android:padding="10dp"
+        android:text="Завершить"
+        android:textColor="?attr/spec_color" />
+
+</LinearLayout>

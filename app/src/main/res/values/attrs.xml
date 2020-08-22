@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="backgroundr" format="color"/>
+        <attr name="main_color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="spec_color" format="color"/>
+        <attr name="comment_text" format="color"/>
+        <attr name="youtube_post_color" format="color"/>
+        <attr name="bottom_nav_act" format="color"/>
+        <attr name="bottom_icon" format="color"/>
+        <attr name="lite_shape" format="color"/>
+        <attr name="text_hint" format="color"/>
+        <attr name="my_message" format="color"/>
+        <attr name="their_message" format="color"/>
+        <attr name="bright_color" format="color"/>
+    </declare-styleable>
+</resources>

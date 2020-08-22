@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/backgroundr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="BackToLogInMenu"
+                android:src="@drawable/ic_raw_back"
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="2dp"
+                android:baselineAligned="false"
+                android:text="Регистрация аккаунта"
+                android:textAlignment="center"
+                android:textColor="?attr/spec_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundr"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/backgroundr"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="?attr/spec_color"
+                android:hint="Email..."
+                android:inputType="textEmailAddress"
+                android:maxLength="33"
+                android:paddingStart="15dp"
+                android:textColor="@drawable/btn_shape_text"
+                android:textColorHint="?attr/spec_color" />
+
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="?attr/spec_color"
+                android:hint="Пароль..."
+                android:inputType="textPassword"
+                android:maxLength="33"
+                android:paddingStart="15dp"
+                android:textColor="@drawable/btn_shape_text"
+                android:textColorHint="?attr/spec_color" />
+
+            <EditText
+                android:id="@+id/register_confim_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="?attr/spec_color"
+                android:hint="Подтвердите пароль..."
+                android:inputType="textPassword"
+                android:maxLength="33"
+                android:paddingStart="15dp"
+                android:textColor="@drawable/btn_shape_text"
+                android:textColorHint="?attr/spec_color" />
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_shape"
+                android:padding="10dp"
+                android:text="Далее"
+                android:textColor="?attr/text_color" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

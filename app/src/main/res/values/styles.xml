@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>    ёй1ц23у4560к5ЮЭ
+        <item name="colorPrimaryDark">#0C0C0C</item>
+        <item name="colorAccent">#3F51B5</item>
+
+
+        <item name="main_color">#151515</item>
+        <item name="backgroundr">#FFFFFF</item>
+        <item name="text_color">#E8FFFEFE</item>
+        <item name="spec_color">#DA1B1B1B</item>
+        <item name="comment_text">#FB474747</item>
+        <item name="youtube_post_color">#BF000000</item>
+        <item name="bottom_nav_act">#FFFFFF</item>
+        <item name="bottom_icon">#000000</item>
+        <item name="lite_shape">#A3EFEBF8</item>
+        <item name="text_hint">#BE3C3C3C</item>
+        <item name="my_message">#F6000000</item>
+        <item name="their_message">#C3C3C3</item>
+        <item name="bright_color">#004EB6</item>
+    </style>
+
+    <style name="NightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1E1E1E</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#919191</item>
+
+
+        <item name="main_color">#1E1E1E</item>
+        <item name="backgroundr">#121212</item>
+        <item name="text_color">#AEAEAE</item>
+        <item name="spec_color">#BCBCBC</item>
+        <item name="comment_text">#9F9F9F</item>
+        <item name="youtube_post_color">#DE191919</item>
+        <item name="bottom_nav_act">#1E1E1E</item>
+        <item name="bottom_icon">#BFBFBF</item>
+        <item name="lite_shape">#DE191919</item>
+        <item name="text_hint">#CD707070</item>
+        <item name="my_message">#4E4E4E</item>
+        <item name="their_message">#252525</item>
+        <item name="bright_color">#BB86FC</item>
+    </style>
+
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

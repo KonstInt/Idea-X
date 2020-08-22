@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Goal</string>
+    <string name="title_videos">Видео</string>
+    <string name="title_tasks">Задания</string>
+    <string name="title_messages">Чаты</string>
+    <string name="title_profile">Меню</string>
+    <string name="title_shop">Магазин</string>
+    <string name="next">Далее</string>
+
+    <string name="task_description">Перед началом теста важно знать:
+        \n\n1)	Все ответы должны выглядеть ровно так, как если бы вы заносили их в бланк ответов ЕГЭ.
+        \n\n2)	Ответы заданий ЕГЭ, которые вносятся на отдельные бланки - не проверяются програм-мой. Вам будет предложено самостоятельно оценить своё решение, опираясь на ответ, предоставленный вам в качестве эталонного.
+        \n\n3)	После каждого ответа на вопрос тестовой части, вы сможете увидеть было ли ваше ре-шение верным.
+        \n\n4)	По окончании теста вы сможете увидеть статистику правильно решённых заданий.
+        \n\n5)	Материалы тестов взяты с портала Решу ЕГЭ https://ege.sdamgia.ru/</string>
+
+    <string-array name="way_todo">
+        <item>Бытовые условия</item>
+        <item>Персонал</item>
+        <item>Реализация</item>
+        <item>продукции</item>
+        <item>Транспорт</item>
+        <item>Оборудование</item>
+        <item>ПО</item>
+        <item>Складирование</item>
+        <item>Улучшение качества</item>
+        <item>Охрана труда</item>
+        <item>Производство</item>
+        <item>Сырье</item>
+        <item>Энергетика</item>
+    </string-array>
+
+
+    <string-array name="predictable_results">
+        <item>Результат улучшений</item>
+        <item>Оптимизация бизнес-процессов</item>
+        <item>Повышение вовлеченности сотрудников</item>
+        <item>Повышение качества материалов</item>
+        <item>Повышение лояльности партнеров/клиентов</item>
+        <item>Сокращение норматива выполнения операций</item>
+        <item>Увеличение производительности труда</item>
+        <item>Улучшение условий труда</item>
+        <item>Унификация материалов</item>
+    </string-array>
+
+
+    <string name="title_activity_task_module_tabbed">TaskModuleTabbed</string>
+    <string name="tab_text_1">Видео</string>
+    <string name="tab_text_2">Тест</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

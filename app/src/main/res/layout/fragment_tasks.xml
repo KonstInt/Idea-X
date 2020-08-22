@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="?attr/backgroundr"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_fragment_num"
+            android:background="?attr/backgroundr"
+            android:textColor="?attr/spec_color"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Задание 1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_description"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/task_fragment_num"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/info_img" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/youtube_post_color">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/youtube_post_color"
+            android:textColor="?attr/text_color"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textSize="30dp"
+            android:text="Последняя попытка:"/>
+
+      <TextView
+          android:id="@+id/test_attempts"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:background="?attr/main_color"
+          android:text="Загрузка..."
+          android:textColor="?attr/text_color"
+          android:paddingHorizontal="15dp"
+          android:paddingVertical="10dp"
+          android:textSize="25dp"
+          />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/testStarter"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="65dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/start_test_btn_shape"
+        android:text="Start"
+        android:textColor="@drawable/btn_shape_text"
+
+        />
+</LinearLayout>
+
+
+</ScrollView>

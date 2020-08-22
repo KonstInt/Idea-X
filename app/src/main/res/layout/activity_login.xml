@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="?attr/backgroundr">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundr"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Добро пожаловать!\nTutor - приложение для подготовки к ЕГЭ"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="?attr/spec_color"
+        android:layout_marginHorizontal="10dp" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="33"
+        android:textColor="@drawable/btn_shape_text"
+        android:paddingStart="15dp"
+        android:hint="Login..."
+        android:textColorHint="?attr/spec_color"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="?attr/spec_color"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLength="33"
+        android:textColor="@drawable/btn_shape_text"
+        android:paddingStart="15dp"
+        android:hint="Password..."
+        android:textColorHint="?attr/spec_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="?attr/spec_color"
+        android:inputType="textPassword"/>
+
+
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+
+
+
+
+    <Button
+    android:id="@+id/login_button"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginBottom="15dp"
+    android:padding="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/start_test_btn_shape"
+    android:text="Войти"
+    android:textColor="@drawable/btn_shape_text"
+    android:layout_marginTop="70dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/forgot_password_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="?attr/spec_color"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Регестрация"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="?attr/spec_color"
+            android:textStyle="bold"
+            android:onClick="goToRegister"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</ScrollView>

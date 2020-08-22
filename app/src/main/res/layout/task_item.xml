@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/white_pressed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="10sp"
+   >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="?attr/lite_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/asset"
+                android:gravity="start"
+                android:layout_weight="1"
+
+                android:text="Задание"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="?attr/spec_color"
+                android:textSize="20sp"
+                />
+
+                <ImageView
+                    android:id="@+id/tc_ready"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_yes"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tc_num"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+
+            android:paddingHorizontal="@dimen/padding_10"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="?attr/bright_color"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tc_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="?attr/spec_color"
+                    android:maxLines="3"
+                    android:gravity="start|center_vertical"
+                    android:text="Тип: текстовые зад.\nCложность : 5/10\nВремя: 3 мин."
+
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="2dp"
+                android:src="@drawable/horizontal_line"
+
+                ></ImageView>
+            <TextView
+                android:id="@+id/tc_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" #дичь #чёэто"
+                android:textStyle="bold"
+                android:textColor="?attr/bright_color"
+                android:textSize="11sp"
+                android:layout_marginLeft="@dimen/padding_10"/>
+
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

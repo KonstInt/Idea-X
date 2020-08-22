@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    android:background="?attr/backgroundr"
+    android:noHistory="true">
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    android:id="@+id/private_chat_bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/backgroundr">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_to_chat_list_room"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-light"
+            android:src="@drawable/ic_raw_back"
+            android:textAllCaps="false"
+            android:textColor="?attr/text_color"
+            android:scaleType="centerCrop"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="Чат"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="?attr/spec_color"
+            android:textSize="20dp"
+            />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_margin="4dp"
+            android:id="@+id/in_chat_room_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo_round"
+            app:civ_border_color="?attr/text_color"
+            app:civ_border_width="2dp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/chat_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/private_chat_bar"
+    android:layout_above="@+id/chat_input"
+    android:layout_marginHorizontal="-4dp"
+
+    />
+
+    <Button
+        android:id="@+id/chat_scroll"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chat_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_button">
+
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/chat_input"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="-10dp"
+        android:layout_marginStart="-3dp"
+        android:layout_marginEnd="-3dp"
+
+        android:background="@drawable/spec_shape"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+
+        <EditText
+            android:id="@+id/their_message_body"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toEndOf="@+id/files_message"
+            android:layout_weight="2"
+            android:background="@color/without"
+            android:ems="10"
+            android:hint="Написать сообщение..."
+            android:inputType="textMultiLine"
+            android:paddingVertical="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="43dp"
+            android:textColor="@drawable/btn_shape_text"
+            android:textColorHint="?attr/text_hint" />
+
+        <ImageButton
+            android:id="@+id/send_message"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/their_message_body"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_send_black_24dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/files_message"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/plus"
+            android:padding="5dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

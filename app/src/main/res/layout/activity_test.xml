@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?attr/main_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="BackToTaskMenu"
+                    android:text="&lt;"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/text_color"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/testNumHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Задание 1"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="?attr/text_color"
+                    android:textSize="20dp"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/testStatisticHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="1/50"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="?attr/text_color"
+                    android:textSize="20dp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:background="?attr/backgroundr"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="?attr/backgroundr">
+
+        <WebView
+            android:id="@+id/testTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/start_test_btn_shape"
+           />
+
+
+
+        <WebView
+            android:id="@+id/testSolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/taskFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="Верно!"
+            android:textAllCaps="false"
+            android:textColor="@color/common_green"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="2dp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAns"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Введите ответ..."
+                android:textColorHint="?attr/text_hint"
+                android:background="@drawable/start_test_btn_shape"
+                android:textColor="@drawable/btn_shape_text"
+                android:paddingStart="15dp"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:id="@+id/getAns"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/start_test_btn_shape"
+                android:onClick="getAnswer"
+                android:padding="5dp"
+                android:text="Ответить"
+                android:textColor="@drawable/btn_shape_text" />
+
+            <Button
+                android:id="@+id/getSol"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/start_test_btn_shape"
+                android:onClick="ShowSolution"
+                android:text="Показать решение"
+                android:padding="5dp"
+                android:layout_margin="15dp"
+                android:textColor="@drawable/btn_shape_text"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/start_test_btn_shape"
+                android:onClick="Next"
+                android:text="Далее"
+                android:padding="5dp"
+                android:layout_margin="15dp"
+                android:textColor="@drawable/btn_shape_text"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

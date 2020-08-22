@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ovs_corp.goal.ui.home.HomeFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_ideas"
+        android:name="com.ovs_corp.goal.ui.dashboard.DashboardFragment"
+        android:label="Уведомления"
+        tools:layout="@layout/fragment_dashboard" />
+
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.ovs_corp.goal.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.ovs_corp.goal.ui.shop.Shop"
+        android:label="Магазин"
+        tools:layout="@layout/fragment_shop" />
+
+
+</navigation>

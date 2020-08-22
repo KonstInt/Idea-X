@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="5dp"
+    android:paddingBottom="4dp"
+    android:background="?attr/backgroundr"
+    android:layout_marginBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="2dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="?attr/spec_color"
+        android:src="@drawable/logo_round"
+        />
+
+    <TextView
+        android:id="@+id/user_name_in_chat_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:text="Костя"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?attr/spec_color"
+
+        />
+
+    <TextView
+        android:id="@+id/their_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:background="@drawable/their_message"
+        android:paddingVertical="10dp"
+        android:paddingRight="32dp"
+        android:paddingLeft="10dp"
+        android:text="Вы"
+
+        android:textColor="?attr/spec_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/their_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/their_message_text"
+        android:layout_alignBottom="@+id/their_message_text"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        android:text="8:20"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:textColor="?attr/comment_text"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:maxHeight="350dp"
+        android:maxWidth="300dp"
+        android:cropToPadding="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_alignParentTop="@+id/their_message_text"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:background="@drawable/my_message"
+        />
+
+
+    <ImageView
+        android:id="@+id/their_message_image_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:maxHeight="350dp"
+        android:maxWidth="300dp"
+        android:cropToPadding="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toEndOf="@+id/message_profile_image"
+        android:padding="5dp"
+        android:background="@drawable/their_message"
+       />
+
+    <TextView
+        android:id="@+id/my_messsage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_alignParentTop="@+id/their_message_text"
+        android:background="@drawable/my_message"
+        android:text="Я"
+        android:textSize="14sp"
+        android:paddingVertical="10dp"
+        android:paddingRight="32dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="?attr/text_color"
+        />
+
+    <TextView
+        android:id="@+id/my_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/my_messsage_text"
+        android:layout_alignBottom="@+id/my_messsage_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        android:text="8:20"
+        android:textColor="@color/gray"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
