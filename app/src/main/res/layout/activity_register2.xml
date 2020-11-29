@@ -60,7 +60,7 @@
         android:layout_marginTop="15dp"
         app:civ_border_width="1dp"
         app:civ_border_color="?attr/bright_color"
-        android:src="@drawable/logo_round"
+        android:src="@drawable/logo"
         android:scaleType="centerCrop"
         />
 
@@ -115,17 +115,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="?attr/spec_color"
-        android:inputType="textPassword"/>
+        android:inputType="text"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="?attr/spec_color"
-        android:text="Любимые комманды : "
-        android:layout_marginHorizontal="17dp"
-        android:layout_marginTop="35sp"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+
 
         <androidx.legacy.widget.Space
             android:layout_width="match_parent"

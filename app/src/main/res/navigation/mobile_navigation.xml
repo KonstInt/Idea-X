@@ -11,29 +11,29 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.ovs_corp.goal.ui.home.HomeFragment"
+        android:name="com.ovs_corp.bstorm.ui.home.HomeFragment"
         android:label="Главная"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_ideas"
-        android:name="com.ovs_corp.goal.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_notisfactoin"
+        android:name="com.ovs_corp.bstorm.ui.dashboard.DashboardFragment"
         android:label="Уведомления"
         tools:layout="@layout/fragment_dashboard" />
 
 
     <fragment
         android:id="@+id/navigation_messages"
-        android:name="com.ovs_corp.goal.ui.messages.MessagesFragment"
+        android:name="com.ovs_corp.bstorm.ui.messages.MessagesFragment"
         android:label="@string/title_messages"
         tools:layout="@layout/fragment_messages" />
 
 
     <fragment
         android:id="@+id/navigation_shop"
-        android:name="com.ovs_corp.goal.ui.shop.Shop"
-        android:label="Магазин"
-        tools:layout="@layout/fragment_shop" />
+        android:name="com.ovs_corp.bstorm.ui.profile.Profile"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
 
 
 </navigation>

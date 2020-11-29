@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:orientation="vertical"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="10dp"
+    android:background="?attr/lite_shape">
 
 
     <LinearLayout
@@ -30,25 +31,7 @@
         android:layout_weight="1"
         android:layout_height="0dp" />
 
-    <ImageView
-        android:id="@+id/in_process"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:src="@drawable/yellow_yes"
-        android:layout_marginHorizontal="20dp"
-        />
 
-    <ImageView
-        android:id="@+id/relized"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:src="@drawable/green_yes"
-        android:layout_marginHorizontal="20dp"
-        />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -63,5 +46,6 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:src="@drawable/horizontal_line"
+
         android:layout_marginHorizontal="@dimen/padding_10"/>
 </LinearLayout>

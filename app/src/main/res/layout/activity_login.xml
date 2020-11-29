@@ -15,17 +15,23 @@
     android:focusableInTouchMode="true" >
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image_f"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Добро пожаловать!\nTutor - приложение для подготовки к ЕГЭ"
+        android:layout_marginTop="@dimen/padding_10"
+        android:text="Добро пожаловать!\nIDEA-X - лучший агригатор для лучших идей."
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -77,15 +83,15 @@
     <Button
     android:id="@+id/login_button"
     android:layout_width="wrap_content"
-    android:layout_height="40dp"
+    android:layout_height="55dp"
     android:layout_gravity="center|bottom"
     android:layout_marginBottom="15dp"
     android:padding="10dp"
     android:layout_alignParentBottom="true"
     android:layout_centerHorizontal="true"
-    android:background="@drawable/start_test_btn_shape"
+    android:background="@drawable/btn_shape"
     android:text="Войти"
-    android:textColor="@drawable/btn_shape_text"
+    android:textColor="?attr/text_color"
     android:layout_marginTop="70dp"/>
 
     <LinearLayout

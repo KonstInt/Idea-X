@@ -13,7 +13,8 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="@dimen/padding_10">
+
+    android:background="?attr/lite_shape">
 
     <TextView
         android:id="@+id/idea_main_way"
@@ -22,7 +23,7 @@
         android:layout_marginTop="@dimen/padding_10"
         android:layout_height="wrap_content"
         android:textSize="13sp"
-        android:textColor="?attr/spec_color"
+        android:textColor="?attr/backgroundr"
 
         android:textStyle="bold"
         android:text="Охрана Т."
@@ -49,7 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,11 +67,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="1dp"
-            android:background="@drawable/ic_like"
+            android:drawableEnd="@drawable/ic_like"
             android:gravity="center"
             android:paddingRight="13dp"
             android:text="222"
-            android:textColor="@color/white"
+            android:textColor="?attr/spec_color"
             android:textSize="15sp" />
     </LinearLayout>
 </RelativeLayout>

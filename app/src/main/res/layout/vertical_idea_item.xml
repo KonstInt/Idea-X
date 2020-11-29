@@ -10,10 +10,12 @@
     app:cardBackgroundColor="@color/white_pressed"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginHorizontal="10sp"
-    android:layout_marginVertical="15sp">
+    android:layout_marginVertical="15sp"
+    android:layout_marginBottom="@dimen/padding_10">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp">
+        android:layout_height="match_parent"
+        android:background="?attr/lite_shape">
 
         <TextView
             android:id="@+id/vertical_idea_main_way"
@@ -22,10 +24,11 @@
             android:layout_marginTop="@dimen/padding_10"
             android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:textColor="?attr/spec_color"
+            android:textColor="?attr/backgroundr"
 
             android:textStyle="bold"
-            android:text="Охрана Т."
+            android:text="Охрана труда"
+
             android:gravity="center"
             android:paddingHorizontal="@dimen/padding_10"
             android:background="@drawable/idea_up_shape"/>
@@ -63,27 +66,24 @@
                 android:id="@+id/vertical_idea_like"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="1dp"
-                android:background="@drawable/ic_like"
+                android:drawableEnd="@drawable/ic_like"
                 android:gravity="center"
                 android:paddingRight="13dp"
                 android:text="222"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textColor="?attr/spec_color"
+                android:textSize="15sp"  />
         </LinearLayout>
 
 
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="25dp"
-            android:src="@drawable/logo_round" />
+            android:src="@drawable/logo" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

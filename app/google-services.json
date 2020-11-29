@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "331964104958",
-    "firebase_url": "https://atom-eleonor.firebaseio.com",
-    "project_id": "atom-eleonor",
-    "storage_bucket": "atom-eleonor.appspot.com"
+    "project_number": "492639764649",
+    "firebase_url": "https://brain-storm-dp.firebaseio.com",
+    "project_id": "brain-storm-dp",
+    "storage_bucket": "brain-storm-dp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:331964104958:android:772952ba2fb9f7f615e5af",
+        "mobilesdk_app_id": "1:492639764649:android:02640d4e7df3c493be69b8",
         "android_client_info": {
-          "package_name": "com.ovs_corp.goal"
+          "package_name": "com.ovs_corp.bstorm"
         }
       },
       "oauth_client": [
         {
-          "client_id": "331964104958-9t71jipl1t598spao6eims4sdtpocnhs.apps.googleusercontent.com",
+          "client_id": "492639764649-oi6okd28o3d5ah7k6t6r18gfqq9dknsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ovs_corp.bstorm",
+            "certificate_hash": "71adc3eb648b9ec4d9bb094e08974731c04f90b3"
+          }
+        },
+        {
+          "client_id": "492639764649-9ksumt7qhsckot90kahoonvoh6qq1fcu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB_JT26e7ZrMI-xLt3NTywb2pn4UKg9WFI"
+          "current_key": "AIzaSyDLQNwEhKYYH6s6ZnJ1SW1z83MDavTYD1M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "331964104958-9t71jipl1t598spao6eims4sdtpocnhs.apps.googleusercontent.com",
+              "client_id": "492639764649-9ksumt7qhsckot90kahoonvoh6qq1fcu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

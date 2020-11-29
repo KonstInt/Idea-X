@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.VerticalScrollNews"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="?attr/backgroundr">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@color/white">
+        android:background="?attr/backgroundr">
 
         <ImageView
             android:padding="5dp"
@@ -39,7 +40,7 @@
             android:layout_marginLeft="10dp"
             android:text="Все новости"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="?attr/spec_color"
             android:textSize="20dp"
             />
 

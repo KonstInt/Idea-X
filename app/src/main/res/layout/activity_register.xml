@@ -61,6 +61,18 @@
             android:focusableInTouchMode="true"
             android:orientation="vertical">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/set_profile_image_f"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                />
+
+
 
 
             <EditText
